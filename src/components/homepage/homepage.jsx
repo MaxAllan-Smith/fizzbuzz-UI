@@ -1,6 +1,11 @@
 function HomePage() {
     return ( 
-        <h1>Hello Home</h1>
+        <div className="">
+            <h1>Click the button to play!</h1>
+            <button>
+                Roll the Dice!
+            </button>
+        </div>
      );
 }
 
