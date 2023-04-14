@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../modal/modal";
+import './homepage.css'
 
 function HomePage() {
   const [showModal, setShowModal] = useState(false);
@@ -15,6 +16,17 @@ function HomePage() {
         >
           Instructions
         </button>
+      </div>
+      <hr className="bg-black h-1 mx-10" />
+      <div className="p-2 text-center flex justify-center items-center mt-6">
+        <div id="game-background" className="bg-slate-200 w-screen mx-96 h-[700px] rounded-lg border-2 border-slate-300 drop-shadow-lg">
+          <button className="bg-slate-400 hover:bg-blue-600 text-white font-semibold text-2xl px-5 py-2 rounded-lg border-2 border-slate-500 drop-shadow-lg m-5">
+            Roll Dice!
+          </button>
+          <div className="absolute mt-[500px] ml-[40px]">
+            <img className="max-h-24" src="images/bee.png" alt="" />
+          </div>
+        </div>
       </div>
       <Modal
         isVisible={showModal}
@@ -35,7 +47,7 @@ function HomePage() {
                 • "Baz" = 2 Moves Back <br />
               </ul>
             </div>
-            • Click the 'Roll The Dice' button and hope for the best!
+            • Click the 'Roll Dice' button and hope for the best!
           </p>
         </div>
       </Modal>

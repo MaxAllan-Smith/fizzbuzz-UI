@@ -1,0 +1,5 @@
+#game-background {
+    background-image: url("../../../public/images/game-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
